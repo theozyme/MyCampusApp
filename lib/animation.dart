@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+import "package:lottie/lottie.dart";
 import 'main1.dart';
 
 class Anim extends StatefulWidget {
+  const Anim({super.key});
+
   @override
   State<Anim> createState() => _AnimState();
 }

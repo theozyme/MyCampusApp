@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'page/attachment.dart';
 import 'page/group.dart';
-import 'page/chat.dart';
-import 'page/profile.dart';
+import 'chat_main.dart';
+import 'prof_main.dart';
 import 'page/my_campus.dart';
 //import 'page/haber.dart';//haber akışını buraya ekleyebiliriz.
 
@@ -18,8 +18,8 @@ class _HomeState extends State<Home> {
   final List<Widget> screens=[
     Ikon(),
     Attachment(),
-    Chat(),
-    Profile(),
+    MyChatApp(),
+    ProfilePage1(),
     Group()
   ];
 
@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                     minWidth: 130,
                     onPressed: (){
                       setState(() {
-                        currentScreen = Chat();
+                        currentScreen = MyChatApp();
                         currentTab = 0;
                       });
                     },
@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
                     minWidth:40,
                     onPressed: (){
                       setState(() {
-                        currentScreen = Profile();
+                        currentScreen = ProfilePage1();
                         currentTab = 0;
                       });
                     },

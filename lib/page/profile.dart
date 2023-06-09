@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../prof_main.dart';
 class Profile extends StatefulWidget {
   const Profile({super.key});
 
@@ -17,6 +17,7 @@ class _ProfileState extends State<Profile> {
         ),
         body: Center(
           child:Text('Profile',style: TextStyle(fontSize: 40))),
+          
     );
   }
 }
